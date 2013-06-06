@@ -1,0 +1,28 @@
+// Layout
+//----------------------------------------------------------------------
+.wrap {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+// Header
+.page-header {
+  @include page-header();
+  @include navigation();
+  @include search();
+}
+
+// Main
+@include entry();
+.content {
+  @include btn();
+}
+// Banner
+.banner {
+  @include banner();
+}
+
+// Footer
+.page-footer {
+  @include footer();
+}

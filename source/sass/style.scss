@@ -1,0 +1,68 @@
+// Authors
+// ------------------------------------
+/**
+ * Author: André Duarte;
+ * Theme Name: ;
+ * Theme URI: ;
+ * Description:
+ */
+
+
+
+// Using
+// ------------------------------------
+/**
+ * Font-face typeKit
+ * COMPSASS
+ */
+
+
+
+// CONTENTS
+// ------------------------------------
+/**
+ * MIXINS .............. Super-simple Sass stuff
+ * VARS ................ Variables
+ * NORMALIZE ........... normalize.css (custom)
+ * HEADER .............. Style header page + navigation
+ * FOOTER .............. Style footer page
+ */
+
+
+// COMPASS IMPORTS
+// -----------------------------------
+  @import "compass/css3";
+  @import "compass/typography/text";
+
+
+//*
+// Fundamental styles
+// -----------------------------------
+	@import "base/vars";
+	@import "base/normalize";
+	@import "base/generic";
+
+
+//*
+// Modules
+// -----------------------------------
+	@import "modules/banner";
+  @import "modules/search";
+  @import "modules/navigation";
+	@import "modules/redes-sociais";
+  @import "modules/btn";
+
+
+//*
+// Layouts
+// -----------------------------------
+  @import "layout/header";
+  @import "layout/content";
+  @import "layout/footer";
+  @import "layout/grids";
+
+
+//*
+// Third Party (Plugins)
+// -----------------------------------
+	//@import "third-party/wordpress-core";

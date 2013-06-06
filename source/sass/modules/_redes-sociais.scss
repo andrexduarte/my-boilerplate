@@ -1,0 +1,23 @@
+// Redes sociais
+// ------------------------------
+@import "redes/*.png";
+@include all-redes-sprites;
+
+@mixin redes-sociais() {
+  .redes {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px 0 0;
+    li {
+      float: left;
+      padding-right: 5px;
+    }
+    a {
+      display: block;
+      height: 45px;
+      width: 45px;
+      @include hide-text();
+    }
+  }
+}

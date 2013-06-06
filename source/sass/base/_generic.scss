@@ -1,0 +1,97 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+// ==========================================================================
+// Base styles: opinionated defaults
+// ==========================================================================
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+a {
+  color: #00e;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  color: #06e;
+}
+
+// Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+img {
+  vertical-align: middle;
+}
+
+// Remove default fieldset styles.
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+// Allow only vertical resizing of textareas.
+textarea {
+  resize: vertical;
+}
+
+
+// Geral, Padroes
+// --------------------------------
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  min-height: 100%;
+  overflow-y: scroll;
+}
+body {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+::selection {
+  background-color: #FFEDA8;
+  color: #000;
+}
+::-moz-selection {
+  background-color: #FFEDA8;
+  color: #000;
+}
+a { text-decoration: none; }
+
+
+// ==========================================================================
+//   Helper classes
+// ==========================================================================
+
+// A hack for HTML5 contenteditable attribute on mobile
+textarea[contenteditable],
+input[type=search],
+input[type=submit] {
+  -webkit-appearance: none;
+  @include border-radius(0);
+}
+
+// Hide from both screenreaders and browsers: h5bp.com/u
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}

@@ -1,0 +1,69 @@
+// Main, Content
+// --------------------------------
+@mixin entry() {
+  .entry {
+    padding: 0 3% 22px;
+    h1 {
+      font-family: $helvetica;
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    h2 {
+      color: $red;
+      font-family: $helvetica;
+      font-size: 22px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    h3 {
+      @extend h1;
+      margin-bottom: 20px;
+      text-transform: none;
+    }
+    p {
+      font-family: $helvetica;
+      font-weight: 100;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0 0 20px;
+    }
+    .info {
+      color: $red;
+      span {
+        display: block;
+        margin-bottom: 4px;
+      }
+      strong {
+        color: #333;
+        text-transform: uppercase;
+      }
+    }
+    .image-post {
+      border-bottom: 3px solid $red;
+      margin: -25px -4% 12px;
+      img {
+        max-height: 312px;
+        width: 100%;
+      }
+    }
+    .endereco {
+      font-family: $helvetica;
+      font-weight: 100;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 21px;
+      margin: 0 0 20px;
+      text-transform: uppercase;
+    }
+    a {
+      color: $red;
+      text-decoration: underline;
+    }
+    .aviso {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}

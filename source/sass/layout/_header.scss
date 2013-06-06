@@ -1,0 +1,20 @@
+// Header
+// -----------------------------------
+@mixin page-header() {
+  overflow: hidden;
+  .site-logo {
+    float: left;
+    position: relative;
+    img {
+      background: image-url('logo.svg') no-repeat;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+.no-svg {
+  .site-logo {
+    background: image-url('logo.png') no-repeat;
+  }
+}

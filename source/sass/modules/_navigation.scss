@@ -1,0 +1,19 @@
+// Navigation
+// --------------------------
+@mixin navigation() {
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .item-menu {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    &:focus,
+    &:hover,
+    &:active {
+    }
+  }
+}

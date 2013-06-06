@@ -1,0 +1,25 @@
+// Search
+// -------------------------------------------
+@mixin search($padding: 10px) {
+  .search {
+    @if $padding == '10px' {
+      padding: $padding;
+    } @else {
+      padding: $padding;
+    }
+    @extend %search;
+  }
+}
+
+%search {
+  clear: both;
+  position: relative;
+  fieldset { position: relative; }
+  .textfield {
+
+  }
+  .bt-search {
+    background: image-url('bt-submit.png') no-repeat;
+    @include hide-text();
+  }
+}

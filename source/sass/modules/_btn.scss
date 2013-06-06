@@ -1,0 +1,20 @@
+// Botões
+// --------------------------------------
+@mixin btn($position: none) {
+  .btn {
+    @extend %btn;
+    float: $position;
+  }
+}
+
+@mixin btn-voltar($position: none, $width: 100px) {
+  .btn-voltar {
+    @extend %btn;
+    float: $position;
+    padding: $width;
+  }
+}
+
+%btn {
+  @include inline-block;
+}
